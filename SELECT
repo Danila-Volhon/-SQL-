@@ -1,0 +1,8 @@
+SELECT * FROM airplane_pilot
+JOIN pilot p ON p.pilot_id = airplane_pilot.pilot_id
+JOIN airplane a ON a.airplane_id = airplane_pilot.airplane_id
+
+SELECT p.last_name, a.model, airplane_pilot.flight_date FROM airplane_pilot 
+JOIN pilot p ON p.pilot_id = airplane_pilot.pilot_id
+JOIN airplane a ON a.airplane_id = airplane_pilot.airplane_id 
+WHERE model = ('Сухой');
