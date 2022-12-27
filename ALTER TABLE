@@ -1,0 +1,2 @@
+ALTER TABLE airplane_pilot ADD FOREIGN KEY (pilot_id) REFERENCES pilot (pilot_id);
+ALTER TABLE airplane_pilot ADD FOREIGN KEY (airplane_id) REFERENCES airplane (airplane _id);
