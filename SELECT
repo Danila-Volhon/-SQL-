@@ -2,6 +2,7 @@ SELECT * FROM airplane_pilot
 JOIN pilot p ON p.pilot_id = airplane_pilot.pilot_id
 JOIN airplane a ON a.airplane_id = airplane_pilot.airplane_id
 
+необходимо вывести Фамилию и количество полетов сделанных на самолетах модели “Cухой” с 01.02.22 по 28.02.22 числа .
 SELECT p.last_name, a.model, airplane_pilot.flight_date FROM airplane_pilot 
 JOIN pilot p ON p.pilot_id = airplane_pilot.pilot_id
 JOIN airplane a ON a.airplane_id = airplane_pilot.airplane_id 
