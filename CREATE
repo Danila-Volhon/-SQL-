@@ -1,0 +1,18 @@
+CREATE TABLE pilot (
+pilot_id INTEGER,
+first_name VARCHAR(255),
+last_name VARCHAR(255),
+PRIMARY KEY (pilot_id)
+);
+CREATE TABLE airplane (
+airplane_id INTEGER,
+model VARCHAR (255),
+PRIMARY KEY (airplane_id)
+);
+
+CREATE TABLE airplane_pilot (
+id INTEGER,
+pilot_id INTEGER,
+airplane_id INTEGER,
+flight_date date
+);
